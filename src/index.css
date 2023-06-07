@@ -527,9 +527,11 @@ body{
 }
 @media screen and (max-width: 680px) {
     .login__block{
+        transform: translateX(0);
         left: 0;
     }
     .basket__block{
+        transform: translateX(0);
         left: 0;
     }
     .main__block-leftHero{
