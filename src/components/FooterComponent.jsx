@@ -11,7 +11,7 @@ const FooterComponent = () => {
         <div className='footer'>
             <footer className="footer__container container">
                 <div className="footer__heading">
-                    <p className='footer__heading-text'>Не проходите мимо! Самая вкусная пицца у нас!</p> 
+                    <p className='footer__heading-text'>Не проходи мимо! Самая вкусная пицца у нас!</p> 
                     <p className='footer__heading-text_blue'>Попробуй сам ;)</p>
                 </div>
                 <div className="footer__block">

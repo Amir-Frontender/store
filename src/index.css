@@ -67,6 +67,14 @@ body{
 .header__logo{
     cursor: pointer;
 }
+.header__search{
+    position: relative;
+}
+.header__search-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 .header__search-input{
     margin-right: 20px;
     border-radius: 28px;

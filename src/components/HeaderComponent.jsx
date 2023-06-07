@@ -43,6 +43,7 @@ const HeaderComponent = () => {
                 </div>
                 <div className="header__search">
                     <input onChange={(e)=>setSearch(e.target.value)} className='header__search-input' type="text" placeholder='Найди свою пиццу' />
+                    <img className='header__search-img' src="./assets/icons/exti-1.svg" alt="clear" />
                 </div>
                     {isAuth
                     ?
