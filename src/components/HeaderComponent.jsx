@@ -9,7 +9,11 @@ const HeaderComponent = () => {
   const dispatch = useDispatch()
 
 
-
+  const clear = (e) =>{
+    
+    setSearch('')
+    console.log(e);
+  }
   const showModal = ()=>{
     dispatch({type: "SHOW_MODAL", payload: true})
   }
@@ -41,10 +45,14 @@ const HeaderComponent = () => {
                 <div className="header__logo">
                     <img src="./assets/img/logo.png" alt="logo" />
                 </div>
-                <div className="header__search">
+                <form className="header__search">
                     <input id='val' onChange={(e)=>setSearch(e.target.value)} className='header__search-input' type="text" placeholder='Найди свою пиццу' />
-                    {search && <img onClick={()=>setSearch('')} className='header__search-img' src="./assets/icons/exit-1.svg" alt="clear" />}
-                </div>
+                    {search && 
+                    <button onClick={clear}>
+                      <img  className='header__search-img' src="./assets/icons/exit-1.svg" alt="clear" />
+                    </button>
+                    }
+                </form>
                     {isAuth
                     ?
                     <div className="header__login">
