@@ -540,6 +540,9 @@ body{
     .main__block-rightHero{
         display: none;
     }
+    .login__form-send{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 518px) {
@@ -549,9 +552,7 @@ body{
     .login__block-heading img{
         width: 28px;
     }
-    .login__form-send{
-        flex-direction: column;
-    }
+
     .login__form-name {
         flex-direction: column;
 
